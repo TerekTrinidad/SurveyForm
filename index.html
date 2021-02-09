@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1 id="title" class="text-center">
+				Survey Form
+			</h1>
+			<p id="description" class="description text-center">
+				Thank you for answering our short survey about Genshin Impact!
+			</p>
+		</header>
+		<form id="survey-form">
+			<div class="form-group">
+				<label id="name-label" for="name">Name</label>
+				<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+			</div>
+			<div class="form-group">
+				<label id="email-label" for="email">Email</label>
+				<input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+			</div>
+			<div class="form-group">
+				<label id="number-label" for="number">Age
+					<span class="clue">(Optional)</span>
+				</label>
+				<input type="numer" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+			</div>
+			<div class="form-group">
+				<p>Which option would best describes your current occupation?</p>
+				<select id="dropdown" name="role" class="form-control" required />
+					<option disabled selected value>Select current role</option>
+					<option value="student">Student</option>
+					<option value="job">Full Time Job</option>
+					<option value="learner">Full Time Learner</option>
+					<option value="preferNo">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>Would you recommend Genshin Impact to your friend?</p>
+				<label>
+					<input type="radio" name="user-recommend" value="definitely-yes" class="input-radio" /> Definitely yes
+				</label>
+				<label>
+					<input type="radio" name="user-recommend" value="maybe" class="input-radio" /> Maybe
+				</label>
+				<label>
+					<input type="radio" name="user-recommend" value="definitely-not" class="input-radio" /> Definitely not
+				</label>
+			</div>
+			<div>
+				<p>Who is your favorite character in Genshin Impact?</p>
+				<select id="most-like" name="mostlike" class="form-control">
+					<option disabled selected value>Select an option</option>
+					<option value="keqing">Keqing</option>
+					<option value="diluc">Diluc</option>
+					<option value="chile">Childe</option>
+					<option value="xiao">Xiao</option>
+					<option value="albedo">Albedo</option>
+					<option value="ganyu">Ganyu</option>
+					<option value="jean">Jean</option>
+					<option value="klee">Klee</option>
+					<option value="mona">Mona</option>
+					<option value="qiqi">Qiqi</option>
+					<option value="venti">Venti</option>
+					<option value="zhongli">Zhongli</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>Which 5 star character would you like to see improved?
+					<span class="clue">(Check all that apply)</span>
+				</p>
+				<label>
+					<input type="checkbox" name="prefer" value="keqing" class="input-checkbox" /> Keqing
+				</label><label>
+					<input type="checkbox" name="prefer" value="diluc" class="input-checkbox" /> Diluc
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="childe" class="input-checkbox" /> Childe
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="xiao" class="input-checkbox" /> Xiao
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="albedo" class="input-checkbox" /> Albedo
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="ganyu" class="input-checkbox" /> Ganyu
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="jean" class="input-checkbox" /> Jean
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="klee" class="input-checkbox" /> Klee
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="mona" class="input-checkbox" /> Mona
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="qiqi" class="input-checkbox" /> Qiqi
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="venti" class="input-checkbox" /> Venti
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="zhongli" class="input-checkbox" /> Zhongli
+				</label>
+			</div>
+			<div class="form-group">
+				<p>Any comments or suggestions?</p>
+				<textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+			</div>
+			<div class="form-group">
+				<button type="submit" id="submit" class="submit-button">Submit</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
